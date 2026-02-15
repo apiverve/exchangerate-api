@@ -10,20 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_exchangerate',
-    version='1.1.12',
+    version='1.1.13',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
     description='Exchange Rate is a simple tool for getting the current exchange rate between two currencies. It returns the current exchange rate.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com',
-    project_urls={
-        'Homepage': 'https://apiverve.com',
-        'Documentation': 'https://docs.apiverve.com/ref/exchangerate',
-        'Source': 'https://github.com/apiverve/exchangerate-api',
-        'Bug Tracker': 'https://github.com/apiverve/exchangerate-api/issues'
-    },
+    url='https://exchangerate.apiverve.com?utm_source=pypi&utm_medium=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
