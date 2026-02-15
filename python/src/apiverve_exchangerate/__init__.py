@@ -1,1 +1,3 @@
-from .apiClient import ExchangerateAPIClient
+from .apiClient import ExchangerateAPIClient, ExchangerateAPIClientError
+
+__all__ = ['ExchangerateAPIClient', 'ExchangerateAPIClientError']
