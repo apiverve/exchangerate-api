@@ -44,7 +44,10 @@ from apiverve_exchangerate.apiClient import ExchangerateAPIClient
 # Initialize the client with your APIVerve API key
 api = ExchangerateAPIClient("[YOUR_API_KEY]")
 
-query = { "currency1": "USD", "currency2": "EUR" }
+query = {
+    "currency1": "USD",
+    "currency2": "EUR"
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "currency1": "USD", "currency2": "EUR" }
+query = {
+    "currency1": "USD",
+    "currency2": "EUR"
+}
 ```
 
 ###### Simple Request
@@ -122,7 +128,10 @@ from apiverve_exchangerate.apiClient import ExchangerateAPIClient, ExchangerateA
 
 api = ExchangerateAPIClient("[YOUR_API_KEY]")
 
-query = { "currency1": "USD", "currency2": "EUR" }
+query = {
+    "currency1": "USD",
+    "currency2": "EUR"
+}
 
 try:
     result = api.execute(query)
@@ -143,7 +152,10 @@ from apiverve_exchangerate.apiClient import ExchangerateAPIClient, ExchangerateA
 
 api = ExchangerateAPIClient("[YOUR_API_KEY]")
 
-query = { "currency1": "USD", "currency2": "EUR" }
+query = {
+    "currency1": "USD",
+    "currency2": "EUR"
+}
 
 try:
     result = api.execute(query)
@@ -177,7 +189,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_exchangerate.apiClient import ExchangerateAPIClient, ExchangerateAPIClientError
 
-query = { "currency1": "USD", "currency2": "EUR" }
+query = {
+    "currency1": "USD",
+    "currency2": "EUR"
+}
 
 # Using context manager ensures proper cleanup
 with ExchangerateAPIClient("[YOUR_API_KEY]") as api:
@@ -203,7 +218,10 @@ from apiverve_exchangerate.apiClient import ExchangerateAPIClient
 # Enable debug mode
 api = ExchangerateAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "currency1": "USD", "currency2": "EUR" }
+query = {
+    "currency1": "USD",
+    "currency2": "EUR"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -218,8 +236,12 @@ from apiverve_exchangerate.apiClient import ExchangerateAPIClient
 
 api = ExchangerateAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "currency1": "USD",
+    "currency2": "EUR"
+}
+
 try:
-    query = { "currency1": "USD", "currency2": "EUR" }
     result = api.execute(query)
     print(result)
 finally:
