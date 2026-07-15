@@ -127,7 +127,8 @@ async function makeRequest() {
   "data": {
     "currency1": "USD",
     "currency2": "EUR",
-    "exchangeRate": "0.926480"
+    "exchangeRate": "0.851223",
+    "inverseRate": "1.174773"
   }
 }
 ```
