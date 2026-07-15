@@ -62,6 +62,7 @@ paths:
                   currency1: USD
                   currency2: EUR
                   exchangeRate: '0.851223'
+                  inverseRate: '1.174773'
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
