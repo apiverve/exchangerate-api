@@ -30,7 +30,12 @@ The Exchange Rate API provides a simple, reliable way to integrate exchange rate
 ```javascript
 async function callExchangeRateAPI() {
     try {
-        const response = await fetch('https://api.apiverve.com/v1/exchangerate', {
+        const params = new URLSearchParams({
+            currency1: 'USD',
+            currency2: 'EUR'
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/exchangerate?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -50,7 +55,7 @@ callExchangeRateAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/exchangerate?param=value" \
+curl -X GET "https://api.apiverve.com/v1/exchangerate?currency1=USD&currency2=EUR" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -150,7 +155,7 @@ go get github.com/apiverve/exchangerate-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +174,7 @@ go get github.com/apiverve/exchangerate-api/go
 The Exchange Rate API is commonly used for:
 
 - **Web Applications** - Add exchange rate features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with exchange rate capabilities
 - **Data Pipelines** - Process and analyze data at scale
