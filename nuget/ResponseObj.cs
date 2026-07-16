@@ -25,6 +25,9 @@ namespace APIVerve.API.ExchangeRate
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -37,5 +40,20 @@ namespace APIVerve.API.ExchangeRate
 
         [JsonProperty("exchangeRate")]
         public string ExchangeRate { get; set; }
+
+        [JsonProperty("inverseRate")]
+        public string InverseRate { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
