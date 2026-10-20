@@ -1,13 +1,10 @@
 # Exchange Rate API
 
-Exchange Rate is a simple tool for getting the current exchange rate between two currencies. It returns the current exchange rate.
+Exchange Rate looks up the conversion rate between two currency codes. It returns the current forex rate and last-updated timestamp across 170+ supported currencies, in USD or any other base; paid plans add the inverse rate.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 [![npm version](https://img.shields.io/npm/v/@apiverve/exchangerate.svg)](https://www.npmjs.com/package/@apiverve/exchangerate)
 
-This is a Javascript Wrapper for the [Exchange Rate API](https://exchangerate.apiverve.com?utm_source=npm&utm_medium=readme)
+This is a JavaScript wrapper for the [Exchange Rate API](https://apiverve.com/marketplace/exchangerate?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -28,15 +25,15 @@ yarn add @apiverve/exchangerate
 ## Configuration
 
 Before using the Exchange Rate API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=readme)
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
 ## Quick Start
 
-[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=readme)
+[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=referral&utm_content=readme)
 
-The Exchange Rate API documentation is found here: [https://docs.apiverve.com/ref/exchangerate](https://docs.apiverve.com/ref/exchangerate?utm_source=npm&utm_medium=readme).
+The Exchange Rate API documentation is found here: [https://docs.apiverve.com/ref/exchangerate](https://docs.apiverve.com/ref/exchangerate?utm_source=npm&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -61,7 +58,8 @@ Using the API is simple. All you have to do is make a request. The API will retu
 ```javascript
 var query = {
   currency1: "USD",
-  currency2: "EUR"
+  currency2: "EUR",
+  date: "2025-06-02"
 };
 
 api.execute(query, function (error, data) {
@@ -82,7 +80,8 @@ You can also use promises to make requests. The API returns a promise that you c
 ```javascript
 var query = {
   currency1: "USD",
-  currency2: "EUR"
+  currency2: "EUR",
+  date: "2025-06-02"
 };
 
 api.execute(query)
@@ -104,7 +103,8 @@ You can also use async/await to make requests. The API returns a promise that yo
 async function makeRequest() {
     var query = {
   currency1: "USD",
-  currency2: "EUR"
+  currency2: "EUR",
+  date: "2025-06-02"
 };
 
     try {
@@ -127,8 +127,9 @@ async function makeRequest() {
   "data": {
     "currency1": "USD",
     "currency2": "EUR",
-    "exchangeRate": "0.851223",
-    "inverseRate": "1.174773"
+    "exchangeRate": "0.866664",
+    "inverseRate": "1.153850",
+    "lastUpdated": "2026-09-16T02:00:27.378Z"
   }
 }
 ```
@@ -137,7 +138,7 @@ async function makeRequest() {
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -149,12 +150,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=readme), [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=readme), and [Refund Policy](https://apiverve.com/refund?utm_source=npm&utm_medium=readme).
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=referral&utm_content=readme) and [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 

@@ -16,7 +16,8 @@ const api = new exchangerateAPI({
 // Example query
 var query = {
   currency1: "USD",
-  currency2: "EUR"
+  currency2: "EUR",
+  date: "2025-06-02"
 };
 
 // Make the API request using callback

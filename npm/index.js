@@ -30,7 +30,7 @@ class exchangerateWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/exchangerate';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"currency1":{"type":"string","required":true},"currency2":{"type":"string","required":true}};
+        this.validationRules = {"currency1":{"type":"string","required":true},"currency2":{"type":"string","required":true},"date":{"type":"string","required":false}};
     }
 
     /**

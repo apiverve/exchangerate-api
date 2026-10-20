@@ -29,6 +29,7 @@ declare module '@apiverve/exchangerate' {
       currency2:    null | string;
       exchangeRate: null | string;
       inverseRate:  null | string;
+      lastUpdated:  Date | null;
   }
 
   export default class exchangerateWrapper {
