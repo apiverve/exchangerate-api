@@ -1,6 +1,6 @@
 import re
-from typing import Dict, Optional, Any
-from dataclasses import dataclass, List
+from typing import Dict, Optional, Any, List
+from dataclasses import dataclass
 import requests
 
 
@@ -25,7 +25,8 @@ class ExchangerateAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
         "currency1": {"type": "string", "required": True},
-        "currency2": {"type": "string", "required": True}
+        "currency2": {"type": "string", "required": True},
+        "date": {"type": "string", "required": False}
     }
 
     # Format validation patterns
