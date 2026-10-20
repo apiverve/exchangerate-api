@@ -43,6 +43,9 @@ namespace APIVerve.API.ExchangeRate
 
         [JsonProperty("inverseRate")]
         public string InverseRate { get; set; }
+
+        [JsonProperty("lastUpdated")]
+        public DateTimeOffset? LastUpdated { get; set; }
     }
 
     public partial class Premium
