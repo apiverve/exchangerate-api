@@ -2,8 +2,10 @@ openapi: 3.0.4
 info:
   title: Exchange Rate
   description: >-
-    Exchange Rate is a simple tool for getting the current exchange rate between
-    two currencies. It returns the current exchange rate.
+    Exchange Rate looks up the conversion rate between two currency codes. It
+    returns the current forex rate and last-updated timestamp across 170+
+    supported currencies, in USD or any other base; paid plans add the inverse
+    rate.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +20,7 @@ servers:
 paths:
   /v1/exchangerate:
     get:
-      summary: Get Exchange Rate
+      summary: Exchange Rate
       description: >-
         Exchange Rate is a simple tool for getting the current exchange rate
         between two currencies. It returns the current exchange rate.
@@ -38,6 +40,18 @@ paths:
           required: true
           description: The second currency you want to get the exchange rate for
           example: EUR
+        - name: date
+          in: query
+          schema:
+            type: string
+          required: false
+          description: >-
+            Optional past date (YYYY-MM-DD) to use that day's closing rates
+            instead of live rates. History runs from 1999-01-04 for about 30
+            major currencies and covers every supported currency from March
+            2024. A day with no rates, such as a weekend or holiday, uses the
+            last close before it.
+          example: '2025-06-02'
       responses:
         '200':
           description: Successful Response
@@ -61,8 +75,9 @@ paths:
                 data:
                   currency1: USD
                   currency2: EUR
-                  exchangeRate: '0.851223'
-                  inverseRate: '1.174773'
+                  exchangeRate: '0.866664'
+                  inverseRate: '1.153850'
+                  lastUpdated: '2026-09-16T02:00:27.378Z'
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':

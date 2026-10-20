@@ -1,13 +1,13 @@
-# [Exchange Rate API](https://exchangerate.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Exchange Rate API](https://apiverve.com/marketplace/exchangerate?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Exchange Rate is a simple tool for getting the current exchange rate between two currencies. It returns the current exchange rate.
+Exchange Rate looks up the conversion rate between two currency codes. It returns the current forex rate and last-updated timestamp across 170+ supported currencies, in USD or any other base; paid plans add the inverse rate.
 
 The Exchange Rate API provides a simple, reliable way to integrate exchange rate functionality into your applications. Built for developers who need production-ready exchange rate capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://exchangerate.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/exchangerate?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://exchangerate.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/exchangerate?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -162,7 +162,7 @@ go get github.com/apiverve/exchangerate-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Exchange Rate API](https://exchangerate.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Exchange Rate API](https://apiverve.com/marketplace/exchangerate?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/exchangerate](https://docs.apiverve.com/ref/exchangerate)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -214,8 +214,9 @@ A real response from the Exchange Rate API:
   "data": {
     "currency1": "USD",
     "currency2": "EUR",
-    "exchangeRate": "0.851223",
-    "inverseRate": "1.174773"
+    "exchangeRate": "0.866664",
+    "inverseRate": "1.153850",
+    "lastUpdated": "2026-09-16T02:00:27.378Z"
   }
 }
 ```
@@ -224,7 +225,7 @@ A real response from the Exchange Rate API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Exchange Rate API](https://exchangerate.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Exchange Rate API](https://apiverve.com/marketplace/exchangerate?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
