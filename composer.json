@@ -1,7 +1,7 @@
 {
     "name": "apiverve/exchangerate",
-    "description": "Exchange Rate is a simple tool for getting the current exchange rate between two currencies. It returns the current exchange rate.",
-    "version": "1.2.0",
+    "description": "Exchange Rate looks up the conversion rate between two currency codes. It returns the current forex rate and last-updated timestamp across 170+ supported currencies, in USD or any other base; paid plans add the inverse rate.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "exchangerate",
-        "exchange rate",
+        "fx rate api",
         "exchange rate api",
-        "exchange rate tool",
-        "exchange rate software",
-        "exchange rate service"
+        "fx rates api",
+        "forex api",
+        "live fx rates api"
     ],
-    "homepage": "https://exchangerate.apiverve.com?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/exchangerate?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/exchangerate",
