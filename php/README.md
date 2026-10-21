@@ -1,6 +1,6 @@
 # Exchange Rate API - PHP Package
 
-Exchange Rate is a simple tool for getting the current exchange rate between two currencies. It returns the current exchange rate.
+Exchange Rate looks up the conversion rate between two currency codes. It returns the current forex rate and last-updated timestamp across 170+ supported currencies, in USD or any other base; paid plans add the inverse rate.
 
 ## Installation
 
@@ -29,7 +29,8 @@ $client = new Client('YOUR_API_KEY');
 // Make a request
 $response = $client->execute([
     'currency1' => 'USD',
-    'currency2' => 'EUR'
+    'currency2' => 'EUR',
+    'date' => '2025-06-02'
 ]);
 
 // Print the response
@@ -45,7 +46,7 @@ use APIVerve\Exchangerate\Exceptions\APIException;
 use APIVerve\Exchangerate\Exceptions\ValidationException;
 
 try {
-    $response = $client->execute(['currency1' => 'USD', 'currency2' => 'EUR']);
+    $response = $client->execute(['currency1' => 'USD', 'currency2' => 'EUR', 'date' => '2025-06-02']);
     print_r($response['data']);
 } catch (ValidationException $e) {
     echo "Validation error: " . implode(', ', $e->getErrors());
@@ -74,8 +75,9 @@ $client = new Client(
   "data": {
     "currency1": "USD",
     "currency2": "EUR",
-    "exchangeRate": "0.851223",
-    "inverseRate": "1.174773"
+    "exchangeRate": "0.866664",
+    "inverseRate": "1.153850",
+    "lastUpdated": "2026-09-16T02:00:27.378Z"
   }
 }
 ```
@@ -87,11 +89,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/exchangerate?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/exchangerate?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://exchangerate.apiverve.com?utm_source=php&utm_medium=readme](https://exchangerate.apiverve.com?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/exchangerate?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/exchangerate?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

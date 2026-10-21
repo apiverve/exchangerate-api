@@ -15,11 +15,11 @@ use APIVerve\Exchangerate\Exceptions\ValidationException;
  * @example Basic usage
  * ```php
  * $client = new Client('your_api_key');
- * $response = $client->execute(['currency1' => 'USD', 'currency2' => 'EUR']);
+ * $response = $client->execute(['currency1' => 'USD', 'currency2' => 'EUR', 'date' => '2025-06-02']);
  * print_r($response);
  * ```
  *
- * @see https://exchangerate.apiverve.com?utm_source=php&utm_medium=readme
+ * @see https://apiverve.com/marketplace/exchangerate?utm_source=php&utm_medium=referral&utm_content=readme
  */
 class Client
 {
@@ -35,7 +35,8 @@ class Client
      */
     private const VALIDATION_RULES = [
         'currency1' => ['type' => 'string', 'required' => true],
-        'currency2' => ['type' => 'string', 'required' => true]
+        'currency2' => ['type' => 'string', 'required' => true],
+        'date' => ['type' => 'string', 'required' => false]
     ];
 
     /**
