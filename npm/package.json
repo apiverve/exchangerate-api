@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/exchangerate",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Exchange Rate looks up the conversion rate between two currency codes. It returns the current forex rate and last-updated timestamp across 170+ supported currencies, in USD or any other base; paid plans add the inverse rate.",
   "main": "index.js",
   "types": "index.d.ts",
