@@ -25,11 +25,35 @@ declare module '@apiverve/exchangerate' {
 
 
   interface ExchangeRateData {
-      currency1:    null | string;
-      currency2:    null | string;
-      exchangeRate: null | string;
-      inverseRate:  null | string;
-      lastUpdated:  Date | null;
+      currency1:     null | string;
+      currency2:     null | string;
+      exchangeRate:  null | string;
+      inverseRate:   null | string;
+      date:          Date | null;
+      lastUpdated:   Date | null;
+      currency1Name: null | string;
+      currency2Name: null | string;
+      change1D:      number | null;
+      change7D:      number | null;
+      change30D:     number | null;
+      change1Y:      number | null;
+      high30D:       number | null;
+      low30D:        number | null;
+      average30D:    number | null;
+      volatility30D: number | null;
+      history:       History[];
+      hourly:        Hourly[];
+  }
+  
+  interface History {
+      date: Date | null;
+      rate: number | null;
+  }
+  
+  interface Hourly {
+      hour:      number | null;
+      rate:      number | null;
+      timestamp: Date | null;
   }
 
   export default class exchangerateWrapper {
