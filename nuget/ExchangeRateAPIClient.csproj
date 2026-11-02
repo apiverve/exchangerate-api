@@ -4,7 +4,7 @@
     <TargetFrameworks>net20;net35;net40;net45;netstandard2.0;netstandard2.1;net6.0;net8.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Exchange Rate API</Title>
-    <Version>1.2.3</Version>
+    <Version>1.2.4</Version>
     <Authors>APIVerve</Authors>
     <Company>APIVerve</Company>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -14,7 +14,7 @@
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <PackageProjectUrl>https://apiverve.com/marketplace/exchangerate?utm_source=nuget&amp;utm_medium=referral&amp;utm_content=homepage</PackageProjectUrl>
     <SignAssembly>False</SignAssembly>
-    <Description>Exchange Rate looks up the conversion rate between two currency codes. It returns the current forex rate and last-updated timestamp across 170+ supported currencies, in USD or any other base; paid plans add the inverse rate.</Description>
+    <Description>Exchange Rate looks up the conversion rate between two currency codes across 170+ currencies, with both currency names and the last-updated time. Paid plans add the inverse rate, the pair's 1-day to 1-year change, its 30-day high, low, average and volatility, past dates, and hourly and 30-day daily history.</Description>
     <RepositoryUrl>https://github.com/apiverve/exchangerate-api</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>fx-rate-api;exchange-rate-api;fx-rates-api;forex-api;live-fx-rates-api;api;rest;http;client;apiverve;wrapper;sdk</PackageTags>
@@ -37,7 +37,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
 
     <!-- Package Release Notes -->
-    <PackageReleaseNotes>Exchange Rate API client for .NET, version 1.2.3. Features include async/await support, automatic retries, custom headers, request logging, and cancellation token support.</PackageReleaseNotes>
+    <PackageReleaseNotes>Exchange Rate API client for .NET, version 1.2.4. Features include async/await support, automatic retries, custom headers, request logging, and cancellation token support.</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">

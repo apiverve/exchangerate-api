@@ -27,5 +27,17 @@ namespace APIVerve.API.ExchangeRate
         /// </summary>
         [JsonProperty("date")]
         public string Date { get; set; }
+
+        /// <summary>
+        /// Include the pair's daily closing rate for the last 30 days
+        /// </summary>
+        [JsonProperty("history")]
+        public bool? History { get; set; }
+
+        /// <summary>
+        /// Include the pair's rate for each of the last 24 hours (live rates only, not with date)
+        /// </summary>
+        [JsonProperty("hourly")]
+        public bool? Hourly { get; set; }
     }
 }
