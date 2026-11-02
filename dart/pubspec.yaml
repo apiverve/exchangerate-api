@@ -1,7 +1,7 @@
 name: apiverve_exchangerate
-description: Exchange Rate is a simple tool for getting the current exchange rate between two currencies. It returns the current exchange rate.
-version: 1.1.14
-homepage: https://exchangerate.apiverve.com?utm_source=dart&utm_medium=homepage
+description: "Exchange Rate looks up the conversion rate between two currency codes across 170+ currencies, with both currency names and the last-updated time. Paid plans add the inverse rate, the pair's 1-day to 1-year change, its 30-day high, low, average and volatility, past dates, and hourly and 30-day daily history."
+version: 1.2.4
+homepage: https://apiverve.com/marketplace/exchangerate?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/exchangerate-api/tree/main/dart
 
 environment:
