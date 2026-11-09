@@ -26,7 +26,9 @@ class ExchangerateAPIClient:
     VALIDATION_RULES = {
         "currency1": {"type": "string", "required": True},
         "currency2": {"type": "string", "required": True},
-        "date": {"type": "string", "required": False}
+        "date": {"type": "string", "required": False},
+        "history": {"type": "boolean", "required": False, "default": False},
+        "hourly": {"type": "boolean", "required": False, "format": "date", "default": False}
     }
 
     # Format validation patterns
