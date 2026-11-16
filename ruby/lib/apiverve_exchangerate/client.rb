@@ -19,7 +19,7 @@ module APIVerve
       DEFAULT_TIMEOUT = 30
 
       # Validation rules for parameters
-      VALIDATION_RULES = { 'currency1' => { type: 'string', required: true }, 'currency2' => { type: 'string', required: true }, 'date' => { type: 'string', required: false }, 'history' => { type: 'boolean', required: false }, 'hourly' => { type: 'boolean', required: false, format: 'date' } }
+      VALIDATION_RULES = { 'currency1' => { type: 'string', required: true }, 'currency2' => { type: 'string', required: true }, 'date' => { type: 'string', required: false }, 'history' => { type: 'boolean', required: false }, 'hourly' => { type: 'boolean', required: false } }
 
       # Format validation patterns
       FORMAT_PATTERNS = {
