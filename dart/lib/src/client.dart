@@ -53,7 +53,7 @@ final _formatPatterns = {
 /// * [currency2] (required) - The second currency you want to get the exchange rate for
 /// * [date] - Optional past date (YYYY-MM-DD) to use that day's closing rates instead of live rates. History runs from 1999-01-04 for about 30 major currencies and covers every supported currency from March 2024. A day with no rates, such as a weekend or holiday, uses the last close before it.
 /// * [history] - Include the pair's daily closing rate for the last 30 days
-/// * [hourly] - Include the pair's rate for each of the last 24 hours (live rates only, not with date) [format: date]
+/// * [hourly] - Include the pair's rate for each of the last 24 hours (live rates only, not with date)
 class ExchangerateClient {
   final String apiKey;
   final String baseUrl;
@@ -65,7 +65,7 @@ class ExchangerateClient {
     'currency2': ValidationRule(type: 'string', required: true),
     'date': ValidationRule(type: 'string', required: false),
     'history': ValidationRule(type: 'boolean', required: false),
-    'hourly': ValidationRule(type: 'boolean', required: false, format: 'date'),
+    'hourly': ValidationRule(type: 'boolean', required: false),
   };
 
   ExchangerateClient(this.apiKey, {
