@@ -38,7 +38,7 @@ class Client
         'currency2' => ['type' => 'string', 'required' => true],
         'date' => ['type' => 'string', 'required' => false],
         'history' => ['type' => 'boolean', 'required' => false],
-        'hourly' => ['type' => 'boolean', 'required' => false, 'format' => 'date']
+        'hourly' => ['type' => 'boolean', 'required' => false]
     ];
 
     /**
