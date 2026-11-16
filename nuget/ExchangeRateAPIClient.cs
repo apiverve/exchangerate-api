@@ -71,7 +71,7 @@ namespace APIVerve.API.ExchangeRate
             { "currency2", new ValidationRule { Type = "string", Required = true } },
             { "date", new ValidationRule { Type = "string", Required = false } },
             { "history", new ValidationRule { Type = "boolean", Required = false } },
-            { "hourly", new ValidationRule { Type = "boolean", Required = false, Format = "date" } }
+            { "hourly", new ValidationRule { Type = "boolean", Required = false } }
         };
 
         /// <summary>Format validation patterns</summary>
